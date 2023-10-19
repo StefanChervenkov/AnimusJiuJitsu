@@ -4,7 +4,9 @@ const app = express();
 const constants = require('./constants');
 const handlebars = require('express-handlebars');
 const routes = require('./router');
+const dbConfig = require('./config/dbConfig');
 
+dbConfig();
 
 app.engine('hbs', handlebars.engine({extname: 'hbs'}));
 app.set('view engine', 'hbs');
@@ -14,10 +16,7 @@ app.use(routes);
 app.use(express.static(path.resolve(__dirname, './public')));
 
 
-app.get('/signup', (req, res) => {
-    res.render('signup')
-    
-});
+
 
 
 
