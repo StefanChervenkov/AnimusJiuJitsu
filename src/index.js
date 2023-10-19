@@ -3,20 +3,17 @@ const path = require('path');
 const app = express();
 const constants = require('./constants');
 const handlebars = require('express-handlebars');
-
+const routes = require('./router');
 
 
 app.engine('hbs', handlebars.engine({extname: 'hbs'}));
 app.set('view engine', 'hbs');
 app.set('views', './src/views'); 
 
-app.use(express.urlencoded({extended: false}));
+app.use(routes);
 app.use(express.static(path.resolve(__dirname, './public')));
 
-app.get('/', (req, res) => {
-    res.render('startPage')
-    
-});
+
 app.get('/signup', (req, res) => {
     res.render('signup')
     
