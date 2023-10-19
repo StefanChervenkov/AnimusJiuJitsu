@@ -12,7 +12,7 @@ router.post('/signup', async (req, res) => {
     const phoneNumber = Number(req.body.phoneNumber);
     const newStudent = {fullName, userName, email, birthDate,phoneNumber, password, gender};
 
-    await Student.create(newStudents);
+    await Student.create(newStudent);
 
     res.redirect('/')
     
