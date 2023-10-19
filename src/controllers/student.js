@@ -18,6 +18,16 @@ router.post('/signup', async (req, res) => {
     
 });
 
+router.get('/login', (req, res) => {
+    res.render('login')
+    
+});
+router.post('/login', (req, res) => {
+    
+    res.redirect('/');
+    
+});
+
 
 
 
