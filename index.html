@@ -1,115 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animus Jiu Jitsu</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анимус Джу Джицу</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0a2540",
+                        accent: "#d72638",
+                        light: "#f8f9fa",
+                    },
+                    fontFamily: {
+                        sans: ["Roboto", "sans-serif"],
+                        heading: ["Oswald", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body class="bg-gray-50 text-gray-900">
 
-  <!-- Navbar -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto flex items-center justify-between p-4">
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <img src="images/logo.png" alt="Animus Jiu Jitsu Logo" class="h-10 w-10 rounded-full">
-        <span class="font-bold text-xl">Animus Jiu Jitsu</span>
-      </div>
-      <!-- Navigation -->
-      <nav class="space-x-6">
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#schedule" class="hover:text-blue-600">Schedule</a>
-        <a href="#signup" class="hover:text-blue-600">Sign Up</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-light text-gray-900 font-sans">
 
-  <!-- Hero Section -->
-  <section class="bg-blue-600 text-white text-center py-20">
-    <h1 class="text-4xl font-bold mb-4">Welcome to Animus Jiu Jitsu</h1>
-    <p class="text-lg mb-6">Learn Brazilian Jiu Jitsu in a friendly and professional environment.</p>
-    <a href="#signup" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-200">
-      Join Us Today
-    </a>
-  </section>
+    <!-- Навигация -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <!-- Лого -->
+            <div class="flex items-center space-x-2">
+                <img src="images/logo.png" alt="Анимус Джу Джицу Лого" class="h-10 w-10 rounded-full">
+                <span class="font-heading text-2xl text-primary">Анимус Джу Джицу</span>
+            </div>
+            <!-- Линкове -->
+            <nav class="space-x-6 font-medium">
+                <a href="#about" class="hover:text-accent">За клуба</a>
+                <a href="schedule.html" class="hover:text-accent">График</a>
+                <a href="#signup" class="hover:text-accent">Запиши се</a>
+                <a href="#contact" class="hover:text-accent">Контакти</a>
+            </nav>
+        </div>
+    </header>
 
-  <!-- About Section -->
-  <section id="about" class="container mx-auto py-16 px-4">
-    <h2 class="text-3xl font-bold mb-6 text-center">About Our Club</h2>
-    <p class="text-lg max-w-2xl mx-auto text-center">
-      At Animus Jiu Jitsu, we focus on developing both martial skills and personal growth. 
-      Our experienced instructors teach students of all levels — from beginners to competitors.
-    </p>
-  </section>
+    <!-- Геройска секция -->
+    <section class="bg-primary text-white text-center py-20">
+        <h1 class="font-heading text-4xl mb-4">Добре дошли в Анимус Джу Джицу</h1>
+        <p class="text-lg mb-6">Тренирай бразилско джу джицу в приятелска и професионална среда.</p>
+        <a href="https://axismartialarts.com/login" class="bg-accent text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-red-700">
+            Вход за трениращи
+        </a>
+    </section>
 
-  <!-- Schedule Section -->
-  <section id="schedule" class="bg-gray-100 py-16 px-4">
-    <h2 class="text-3xl font-bold mb-6 text-center">Class Schedule</h2>
-    <div class="max-w-3xl mx-auto text-center">
-      <p class="mb-4">Here you can display your weekly class schedule.</p>
-      <table class="w-full border-collapse border border-gray-300">
-        <thead>
-          <tr class="bg-gray-200">
-            <th class="border border-gray-300 px-4 py-2">Day</th>
-            <th class="border border-gray-300 px-4 py-2">Time</th>
-            <th class="border border-gray-300 px-4 py-2">Class</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="border px-4 py-2">Monday</td>
-            <td class="border px-4 py-2">18:00 - 19:30</td>
-            <td class="border px-4 py-2">All Levels</td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">Wednesday</td>
-            <td class="border px-4 py-2">18:00 - 19:30</td>
-            <td class="border px-4 py-2">Advanced</td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">Friday</td>
-            <td class="border px-4 py-2">18:00 - 19:30</td>
-            <td class="border px-4 py-2">Beginner</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+    <!-- За клуба -->
+    <section id="about" class="container mx-auto py-16 px-4">
+        <h2 class="font-heading text-3xl mb-6 text-center">За нашия клуб</h2>
+        <p class="text-lg max-w-2xl mx-auto text-center">
+            В Анимус Джу Джицу обучаваме деца и възрастни, начинаещи и състезатели.
+            Нашите треньори са опитни инструктори, които ще ти помогнат да развиеш умения, увереност и дисциплина.
+        </p>
+    </section>
 
-  <!-- Signup Section -->
-  <section id="signup" class="container mx-auto py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-6">Sign Up</h2>
-    <p class="mb-4">Ready to start training? Register through our gym management system.</p>
-    <a href="https://your-axis-signup-link.com" target="_blank"
-       class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-700">
-      Sign Up Here
-    </a>
-  </section>
+   
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-gray-100 py-16 px-4">
-    <h2 class="text-3xl font-bold mb-6 text-center">Contact & Location</h2>
-    <div class="max-w-3xl mx-auto text-center">
-      <p>Email: <a href="mailto:info@animusbjj.com" class="text-blue-600">info@animusbjj.com</a></p>
-      <p>Phone: +359 88 123 4567</p>
-      <p class="mt-4">Find us at:</p>
-      <div class="mt-4">
-        <!-- Google Maps Embed Example -->
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3..." 
-          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-  </section>
+    <!-- Запиши се -->
+    <section id="signup" class="container mx-auto py-16 px-4 text-center">
+        <h2 class="font-heading text-3xl mb-6">Запиши се</h2>
+        <p class="mb-4">Готов ли си да започнеш? Регистрирай се чрез нашата система.</p>
+        <a href="https://axismartialarts.com/qr-code/919adc15-fcc7-4f3c-ba1b-cb1276927fce/lead/form" target="_blank"
+            class="bg-accent text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-red-700">
+            Регистрация тук
+        </a>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-white shadow mt-10">
-    <div class="container mx-auto text-center p-4 text-sm text-gray-500">
-      © 2025 Animus Jiu Jitsu — All rights reserved.
-    </div>
-  </footer>
+    <!-- Контакти -->
+    <section id="contact" class="bg-gray-100 py-16 px-4">
+        <h2 class="font-heading text-3xl mb-6 text-center">Контакти и локация</h2>
+        <div class="max-w-3xl mx-auto text-center">
+            <p>Email: <a href="mailto:info@animusbjj.com" class="text-accent">stefan.chervenkov.sth@gmail.com</a></p>
+            <p>Телефон: +359 888892323</p>
+            <p class="mt-4">Адрес на залата:</p>
+            <div class="mt-4">
+                <!-- Пример за Google Maps embed -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1219.2840641130056!2d23.733035430458568!3d41.5705877896021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14abc1fd4d807187%3A0x672b2bf1e1a8667a!2sAnimus%20Jiu%20Jitsu!5e0!3m2!1ssv!2sbg!4v1756636203755!5m2!1ssv!2sbg"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow mt-10">
+        <div class="container mx-auto text-center p-4 text-sm text-gray-500">
+            © 2025 Анимус Джу Джицу — Всички права запазени.
+        </div>
+    </footer>
 
 </body>
+
 </html>

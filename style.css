@@ -1,0 +1,36 @@
+/* Общи стилове за таблици */
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover ефект за редовете */
+tbody tr:hover {
+  background-color: #d72638; /* акцентен цвят */
+  color: white;
+}
+
+/* Заглавни редове на таблицата */
+thead th {
+  background-color: #0a2540;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Бутоните */
+a.bg-accent {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+a.bg-accent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Допълнителен ефект на hero заглавие */
+section.bg-primary h1 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
