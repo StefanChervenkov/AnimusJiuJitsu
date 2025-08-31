@@ -34,3 +34,11 @@ a.bg-accent:hover {
 section.bg-primary h1 {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
+
+
+#mobile-menu a {
+  transition: background-color 0.2s;
+}
+#mobile-menu a:hover {
+  background-color: #f8f9fa; /* light gray hover effect */
+}
